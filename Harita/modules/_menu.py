@@ -53,7 +53,7 @@ async def reopen_again(event):
             pm_caption,
             buttons=[
                 [
-                    Button.inline("About Me", data="soon"),
+                    Button.inline("Tutorial", data="soon"),
                     Button.inline("Commands", data="help_menu"),
                 ],
                   [
@@ -169,7 +169,7 @@ def paginate_help(event, page_number, loaded_plugins, prefix):
         ] + [
             (
                 custom.Button.inline(
-                    "Go Back", data="reopen_again"
+                    "Home", data="reopen_again"
                ),
                 custom.Button.url(
                     "Source", "https://t.me/TERA_BAAP_VILLAIN_XD"
