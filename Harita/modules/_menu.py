@@ -33,7 +33,7 @@ async def start(event):
             pm_caption,
             buttons=[
                 [
-                    Button.inline("Tutorial", data="soon"),
+                    Button.inline("About Me", data="soon"),
                     Button.inline("Commands", data="help_menu"),
                 ],
                   [
@@ -53,12 +53,12 @@ async def reopen_again(event):
             pm_caption,
             buttons=[
                 [
-                    Button.inline("Tutorial", data="soon"),
+                    Button.inline("About Me", data="soon"),
                     Button.inline("Commands", data="help_menu"),
                 ],
                   [
                     Button.url(
-                        "Add Me To Your Group!", "t.me/haritarobot?startgroup=true"
+                        "Add Me To Your Group!", "t.me/MissAndreaBot?startgroup=true"
                     ),
                 ],
             ],
@@ -75,7 +75,7 @@ async def help(event):
     else:
         await event.reply(
             "Contact me in PM for help!",
-            buttons=[[Button.url("Click me for help!", "t.me/haritarobot?start=help")]],
+            buttons=[[Button.url("Click me for help!", "t.me/MissAndreaBot?start=help")]],
         )
 
 @tbot.on(events.CallbackQuery(pattern=r"help_menu"))
@@ -169,10 +169,10 @@ def paginate_help(event, page_number, loaded_plugins, prefix):
         ] + [
             (
                 custom.Button.inline(
-                    "Go Back 🔙", data="reopen_again"
+                    "Go Back", data="reopen_again"
                ),
                 custom.Button.url(
-                    "Source", "https://github.com/Teameviral/HaritaRobot"
+                    "Source", "https://t.me/TERA_BAAP_VILLAIN_XD"
                 ),
                 
                 
@@ -221,7 +221,7 @@ def nood_page(event, page_number, loaded_plugins, prefix):
         ] + [
             (
                 custom.Button.inline(
-                    "Go Back 🔙", data="help_menu"
+                    "Home", data="help_menu"
                 ),
 
             )
